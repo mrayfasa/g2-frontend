@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  overflow: auto;
+  background-color: white;
+}
+
+.productdetail {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftsectionproduct img {
+  display: flex;
+  padding: 100px;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  padding-top: 10%;
+}
+
+
+small
+.rightsectionproduct {
+  width: 50%;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.rightsectionproduct h3 {
+  padding: 50px 0 20px 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+.rightsectionproduct input {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.rightsectionproduct button {
+  height: 40px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.rightsectionproduct h4 {
+  padding: 20px 0;
+}
+.rightsectionproduct span {
+  line-height: 25px;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 80px;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  .leftsectionproduct img {
+    padding: 20px;
+  }
+
+  .rightsectionproduct {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rightsectionproduct h3 {
+    font-size: 24px;
+  }
+
+  .rightsectionproduct input {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .rightsectionproduct button {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .rightsectionproduct h4 {
+    padding: 10px 0;
+  }
+
+  .rightsectionproduct span {
+    line-height: 20px;
+  }
+}

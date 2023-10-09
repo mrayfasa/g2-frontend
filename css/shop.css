@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,600;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  overflow: auto;
+  background-color: white;
+}
+
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-image: url("../assets/img/Motif\ Tenun.jpg");
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  /* opacity: 0.9; */
+  /* background-color: black; */
+}
+
+.bigherotext {
+  color: white;
+  font-family: Titan One;
+  font-size: 80px;
+}
+
+.smallherotext {
+  color: white;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Style the search input field */
+#search {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+/* Style the search button */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #05407e;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style the search button icon */
+button i {
+  font-size: 16px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 76px 100px;
+}
+
+.producttext {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: normal;
+}
+.cardsection {
+  margin-top: 51px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* width: 220px; */
+  /* height: 320px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.card a{
+  text-decoration: none;
+  color: #000;
+}
+
+.card a:hover{
+  color: grey;
+}
+
+.card:hover{
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+.cardimg {
+  max-width: 100%;
+  height: auto;
+}
+.cardimg img{
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+}
+.cardname {
+  font-size: 16px;
+}
+.cardtext{
+  flex-wrap: wrap;
+  color: #000;
+}
+.cardprice {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.stars i{
+  color: #ffc633;
+}
+
+#pagination {
+  text-align: center;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #05407e;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 80px;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 768px (ukuran ponsel dan tablet) */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 20px 20px;
+  }
+
+  nav .logo {
+    font-size: 24px;
+  }
+
+  nav ul {
+    width: 60%;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .bigherotext {
+    font-size: 40px;
+  }
+
+  .smallherotext {
+    font-size: 20px;
+  }
+
+  .search-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #search {
+    width: 50%;
+  }
+
+
+  .product {
+    padding: 40px 20px;
+    
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .cardimg img {
+    width: 100%;
+  }
+}

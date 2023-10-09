@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.account{
+    display: flex;
+    height: 86vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-item h1{
+    padding-bottom: 30px;
+}
+
+.item{
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    line-height: 30px;
+    box-shadow: 5px 5px 3px 5px #777;
+    border: 0;
+}
+
+.item button{
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#LogoutButton{
+    text-decoration: none;
+    color: white;
+}
+
+.account-item p{
+    border-bottom: 1px solid black;
+}

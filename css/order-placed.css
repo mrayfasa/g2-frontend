@@ -1,0 +1,120 @@
+/*HEADER*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,600;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  overflow: auto;
+  background-color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 20px 100px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px grey;
+}
+
+nav .logo {
+  font-family: Limelight;
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: normal;
+}
+
+nav ul {
+  display: flex;
+  list-style: none; /* menghilangkan bullet pada nav*/
+  justify-content: flex-end; /* memberi jarak antar menu */
+  width: 40%;
+}
+
+nav ul li {
+  padding-right: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+
+/*ORDER START*/
+#orderContainer
+{
+    font-family: 'Lato', sans-serif;
+    width: 80%;
+    padding-top: 250px;
+    padding-bottom: 150px;
+    margin: auto;
+    text-align: center;
+}
+#orderContainer i
+{
+    color: rgb(5, 187, 5);
+    padding-bottom: 50px;
+    font-size: 10em;
+}
+#aboutCheck p
+{
+    padding-bottom: 70px;
+    padding-top: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: black;
+    font-family: sans-serif;
+}
+#aboutCheck h1
+{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+/*ORDER END*/
+
+/*FOOTER*/
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 80px;
+    justify-content: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 700px)
+{
+    #orderContainer i
+    {
+        font-size: 8em;
+        padding-bottom: 30px;
+    }
+    h1
+    {
+        font-size: 18px;
+    }
+    p
+    {
+        font-size: 15px;
+    }
+}

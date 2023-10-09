@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/icon" href="image/favicon.jpg">
+
+    <!-- LINK dengan CSS -->
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital,wght@0,400;1,700&family=Titan+One&display=swap" rel="stylesheet" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    <script src="js/cookies/index.js"></script>
+    <script src="js/const/url.js"></script>
+    <script src="js/Ajax/index.js"></script>
+    <script src="js/Authorization/authCheck.js"></script>
+
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+              <p>NayaNika</p>
+            </div>
+      
+            <!-- Menu -->
+            <div>
+            <ul class="menu">
+              <li><a  href="homepage.html">Home</a></li>
+              <li><a class = "active" href="shop.html">Shop</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li>
+                <a href="cart.html"><img src="assets/img/cartlogo.png" alt="Company Logo" /></a>
+              </li>
+              <li>
+                <a href="Profile-page.html"><img src="assets/img/profilelogo.png" alt="Company Logo" /></a>
+              </li>
+            </ul>
+            <i class="fa-solid fa-bars menu-bar"></i>
+            </div>
+          </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="bigherotext">
+            <p>#ShopEverything</p>
+        </div>
+        <div class="smallherotext">
+            <p>Find our local products</p>
+        </div>
+        
+    </section>
+
+    <!-- SEARCH AREA-->
+    <form action="shop.html">
+        <section class="search">
+            <div class="search-container">
+                <input type="text" id="search" name="query" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i>Find</button>
+            </div>
+        </section>
+    </form>
+
+    <!-- PRODUCTS -->
+    <section class="product">
+        <div class="producttext">
+            <p>OUR PRODUCTS</p>
+        </div>
+        <div id="container-item" class="cardsection"></div>
+    </section>
+
+    <!-- PAGINATION -->
+    <section id="pagination" class="section-p1">
+        <a href="shop.html">1</a>
+        <a href="#">←</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Group 2 - Tim A - Section Palembang RevoU</p>
+    </footer>
+
+    <!-- LINK JS -->
+    <script src="js/navbar.js"></script>
+    <script src="js/itemCard.js"></script>
+    <script src="js/shop.js"></script>
+  </body>
+</html>

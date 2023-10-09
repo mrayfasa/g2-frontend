@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NayaNika</title>
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/icon" href="image/favicon.jpg">
+
+    <!-- LINK dengan CSS -->
+    <link rel="stylesheet" href="css/account-page.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <script src="js/cookies/index.js"></script>
+    <script src="js/Ajax/index.js"></script>
+    <script src="js/const/url.js"></script>
+  </head>
+  <body>
+      <main>
+        <!-- Logo -->
+        <div class="logo">
+          <p>NayaNika</p>
+        </div>
+      <!--Login & Register Form-->
+      <section class="login-register">
+          <div id='login-form'class='login-page'>
+            <div class="form-box">
+              <div class='button-box'>
+                  <div id='btn'></div>
+                  <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                  <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+              </div>
+              <form id='login' class='input-group-login'>
+                <input type='email' id='login-email'class='input-field'placeholder='Email' required >
+                <div class="toggle-password" >
+                  <input type='password' id="login-password" class='input-field' placeholder='Password' minlength="6" maxlength="28" required>
+                  <i id="toggle-icon" class="fa fa-eye-slash" onclick="togglePassword()"></i>
+                </div>
+                <input type='checkbox'class='check-box'><span>Remember Password</span>
+                <button type='submit'class='submit-btn' onclick="submitLogin(event)">Log in</button>
+              </form>
+              <form id='register' class='input-group-register'>
+                <input type='text' id='register-fullname' class='input-field' placeholder='Full Name' required>
+                <input type='email' id='register-email' class='input-field'placeholder='Email' required>
+                <div class="toggle-password" >
+                  <input type='password' id="register-password" class='input-field' placeholder='Password' required>
+                  <i id="toggle-icon2" class="fa fa-eye-slash" onclick="togglePassword2()"></i>
+                </div>
+                <input type='checkbox' id='termsnconds' class='check-box' required><span>I agree to the terms and conditions</span>
+                <button type='submit'class='submit-btn' onclick="submitRegister(event)">Register</button>
+              </form>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Group 2 - Tim A - Section Palembang RevoU</p>
+    </footer>
+    
+    <!-- LINK JS -->
+    <script src="js/account-page.js" ></script>
+  </body>
+</html> 
